@@ -39,4 +39,53 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+const anchor = document.querySelectorAll('nav a');
+
+anchor[0].textContent = siteContent.nav['nav-item-1']
+anchor[1].textContent = siteContent.nav['nav-item-2']
+anchor[2].textContent = siteContent.nav['nav-item-3']
+anchor[3].textContent = siteContent.nav['nav-item-4']
+anchor[4].textContent = siteContent.nav['nav-item-5']
+anchor[5].textContent = siteContent.nav['nav-item-6']
+
+  for(let i = 0; i < anchor.length; i++){
+    anchor[i].setAttribute('class', 'italic')
+  }
+
+const h1 = document.querySelector('h1');
+const button = document.querySelector('button');
+h1.textContent = siteContent.cta.h1;
+button.textContent = siteContent.cta.button;
+
+document.querySelector('header img').setAttribute('src','http://localhost:9000/img/logo.png');
+
+document.querySelector('section img').setAttribute('src', 'http://localhost:9000/img/cta.png');
+
+document.querySelector('.middle-img').setAttribute('src','http://localhost:9000/img/accent.png');
+
+const h4 = document.querySelectorAll('h4');
+const h4Ps = document.querySelectorAll('p');
+h4[0].textContent = siteContent['main-content']['features-h4'];
+h4[1].textContent = siteContent['main-content']['about-h4'];
+h4[2].textContent = siteContent['main-content']['services-h4'];
+h4[3].textContent = siteContent['main-content']['product-h4'];
+h4[4].textContent = siteContent['main-content']['vision-h4'];
+
+h4Ps[0].textContent = siteContent['main-content']['features-content'];
+h4Ps[1].textContent = siteContent['main-content']['about-content'];
+h4Ps[2].textContent = siteContent['main-content']['services-content'];
+h4Ps[3].textContent = siteContent['main-content']['product-content'];
+h4Ps[4].textContent = siteContent['main-content']['vision-content'];
+
+const footer = document.querySelector('footer a');
+footer.textContent = siteContent.footer['copyright'];
+footer.setAttribute('class', 'bold')
+
+document.querySelector('.contact h4').textContent = siteContent.contact['contact-h4'];
+const contactPs = document.querySelectorAll('.contact p');
+contactPs[0].textContent = siteContent.contact['address'];
+contactPs[1].textContent = siteContent.contact['email'];
+contactPs[2].textContent = siteContent.contact['phone'];
+
+
 console.log('project wired!')
